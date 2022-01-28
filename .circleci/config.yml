@@ -17,14 +17,18 @@ jobs:
       - checkout
       # install dependencies in both apps
       - run:
-          name: Front-End Install
-          command: |
-            npm run install:Frontend
-      - run:
           name: Check install google-chrome
           command: |
             google-chrome --version
             chromedriver --version
+      - run:
+          name: Front-End Install
+          command: |
+            npm run install:Frontend
+      - run:
+          name: Front-End Build
+          command: |
+            npm run build:Frontend
       - run:
           name: Front-End test
           command: |
