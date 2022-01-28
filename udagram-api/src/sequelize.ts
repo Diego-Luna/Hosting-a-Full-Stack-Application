@@ -8,7 +8,5 @@ export const sequelize = new Sequelize({
   host: config.host,
   port: config.db_por,
   dialect: "postgres",
-  //storage: ":memory:",
+  storage: ":memory:",
 });
-
-// port: config.port,
