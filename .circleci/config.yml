@@ -17,7 +17,7 @@ jobs:
           name: Back-End Install
           command: |
             npm run install:API
-       - run:
+      - run:
           name: Front-End Install
           command: |
             npm run install:Frontes
