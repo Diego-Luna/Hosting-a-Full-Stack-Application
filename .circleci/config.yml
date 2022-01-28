@@ -21,7 +21,7 @@ jobs:
           command: |
             npm run install:Frontend
       - run:
-          name: Check install
+          name: Check install google-chrome
           command: |
             google-chrome --version
             chromedriver --version
