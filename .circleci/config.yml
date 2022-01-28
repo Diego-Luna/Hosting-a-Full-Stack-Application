@@ -12,13 +12,19 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
-      - checkout
       - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
+      - checkout
       # install dependencies in both apps
       - run:
           name: Front-End Install
           command: |
             npm run install:Frontend
+      - run:
+          name: Check install
+          command: |
+            google-chrome --version
+            chromedriver --version
       - run:
           name: Front-End test
           command: |
