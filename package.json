@@ -4,9 +4,14 @@
   "description": "This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.",
   "main": "index.js",
   "scripts": {
-    "start:API": "cd udagram-api && npm run start",
+    "prod:API": "cd udagram-api && npm run prod",
+    "build:API": "cd udagram-api && npm run build",
+    "dev:API": "cd udagram-api && npm run dev",
+    "clean:API": "cd udagram-api && npm run clean",
     "start:Frontend": "cd udagram-frontend && npm run start",
-    "test:Frontend": "cd udagram-frontend && npm run test"
+    "test:Frontend": "cd udagram-frontend && npm run test",
+    "e2e:Frontend": "cd udagram-frontend && npm run e2e",
+    "build:Frontes": "cd udagram-frontend && npm run e2e"
   },
   "repository": {
     "type": "git",
