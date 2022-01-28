@@ -13,7 +13,7 @@
     "start:Frontend": "cd udagram-frontend-ready && npm run start",
     "test:Frontend": "cd udagram-frontend-ready && npm run test",
     "e2e:Frontend": "cd udagram-frontend-ready && npm run e2e",
-    "build:Frontend": "cd udagram-frontend-ready && npm run e2e"
+    "build:Frontend": "cd udagram-frontend-ready && npm run build"
   },
   "repository": {
     "type": "git",
