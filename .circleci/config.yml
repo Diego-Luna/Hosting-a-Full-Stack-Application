@@ -3,7 +3,6 @@ orbs:
   # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@4.1.0
   aws-cli: circleci/aws-cli@1.3.1
-  browser-tools: circleci/browser-tools@1.2.4
   # different jobs are calles later in the workflows sections
 jobs:
   build:
@@ -12,15 +11,8 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
-      - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
       - checkout
       # install dependencies in both apps
-      - run:
-          name: Check install google-chrome
-          command: |
-            google-chrome --version
-            chromedriver --version
       - run:
           name: Front-End Install
           command: |
@@ -29,14 +21,6 @@ jobs:
           name: Front-End Build
           command: |
             npm run build:Frontend
-      - run:
-          name: Front-End test
-          command: |
-            npm run test:Frontend
-      - run:
-          name: hello
-          command: |
-            echo "hello-world"
 
 # version: 2.1
 # orbs:
