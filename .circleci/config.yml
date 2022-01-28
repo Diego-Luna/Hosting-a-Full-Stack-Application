@@ -9,9 +9,9 @@ jobs:
     docker:
       # the base image can run most needed actions with orbs
       # - image: "cimg/base:stable"
-      - image: cimg/node:14.15.1
+      - image: cimg/node:14.18.2-browsers
     steps:
-      - node/install
+      # - node/install
       - checkout
       # install dependencies in both apps
       - run:
