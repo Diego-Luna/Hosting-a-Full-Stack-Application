@@ -20,7 +20,15 @@ jobs:
       - run:
           name: Front-End Install
           command: |
-            npm run install:Frontes
+            npm run install:Frontend
+      - run:
+          name: Back-End Build
+          command: |
+            npm run build:API
+      - run:
+          name: Front-End Build
+          command: |
+            npm run build:Frontend
       - run:
           name: hello
           command: |
