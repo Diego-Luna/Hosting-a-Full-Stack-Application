@@ -44,10 +44,10 @@ jobs:
           command: |
             npm run deploy:API
 
-workflows:
-  pipeline:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only: master
+# workflows:
+#   pipeline:
+#     jobs:
+#       - build:
+#           filters:
+#             branches:
+#               only: master
