@@ -13,7 +13,7 @@ jobs:
       - image: cimg/node:14.18.2-browsers
     steps:
       - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
+      # - browser-tools/install-chromedriver
       - checkout
       # install dependencies in both apps
       - run:
@@ -45,3 +45,11 @@ jobs:
           name: hello
           command: |
             echo "hello-world"
+
+workflows:
+  pipeline:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
