@@ -12,7 +12,7 @@ jobs:
       # - image: "cimg/base:stable"
       - image: cimg/node:14.18.2-browsers
     steps:
-      - browser-tools/install-chrome
+      # - browser-tools/install-chrome
       # - browser-tools/install-chromedriver
       - checkout
       # install dependencies in both apps
@@ -32,10 +32,6 @@ jobs:
           name: Back-End Build
           command: |
             npm run build:API
-      - run:
-          name: Check install
-          command: |
-            google-chrome --version
       - run:
           name: Front-End test
           command: |
