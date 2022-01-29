@@ -7,7 +7,7 @@
     "install:API": "cd udagram-api-ready && npm install",
     "prod:API": "cd udagram-api-ready && npm run prod",
     "build:API": "cd udagram-api-ready && npm run build",
-    "dev:API": "cd udagram-api-ready && npm run dev",
+    "deploy:API": "cd udagram-api-ready && npm run deploy",
     "clean:API": "cd udagram-api-ready && npm run clean",
     "install:Frontend": "cd udagram-frontend-ready && npm install",
     "start:Frontend": "cd udagram-frontend-ready && npm run start",
