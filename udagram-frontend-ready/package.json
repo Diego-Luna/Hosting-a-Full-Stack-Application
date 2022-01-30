@@ -8,10 +8,9 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "chmod +x ./bin/test.sh && ./bin/test.sh",
-    "test2": "ng test",
+    "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "deploy": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
