@@ -5,15 +5,13 @@
   "main": "index.js",
   "scripts": {
     "install:API": "cd udagram-api-ready && npm install",
-    "prod:API": "cd udagram-api-ready && npm run prod",
     "build:API": "cd udagram-api-ready && npm run build",
     "deploy:API": "cd udagram-api-ready && npm run deploy",
-    "clean:API": "cd udagram-api-ready && npm run clean",
     "install:Frontend": "cd udagram-frontend-ready && npm install",
-    "start:Frontend": "cd udagram-frontend-ready && npm run start",
     "test:Frontend": "cd udagram-frontend-ready && npm run test",
     "e2e:Frontend": "cd udagram-frontend-ready && npm run e2e",
-    "build:Frontend": "cd udagram-frontend-ready && npm run build"
+    "build:Frontend": "cd udagram-frontend-ready && npm run build",
+    "deploy:Frontend": "cd udagram-frontend-ready && npm run deploy"
   },
   "repository": {
     "type": "git",
