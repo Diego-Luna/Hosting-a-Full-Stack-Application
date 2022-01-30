@@ -2,7 +2,7 @@ branch-defaults:
   master:
     environment: Ebhostingafullstackapplication-env
 deploy:
-  artifact: dist/Archive.zip
+  artifact: www/Archive.zip
 global:
   application_name: EB-Hosting-a-Full-Stack-Application
   default_ec2_keyname: null
