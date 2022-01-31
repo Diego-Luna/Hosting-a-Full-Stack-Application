@@ -9,9 +9,9 @@ Frontend ur:
 
 ### Backend commands:
 
-- `"install:API": "cd udagram-api-ready && npm install",`
-- `"build:API": "cd udagram-api-ready && npm run build",`
-- `"deploy:API": "cd udagram-api-ready && npm run deploy",`
+1. `"install:API": "cd udagram-api-ready && npm install",`
+2. `"build:API": "cd udagram-api-ready && npm run build",`
+3. `"deploy:API": "cd udagram-api-ready && npm run deploy",`
 
 ### Frontend commands:
 
