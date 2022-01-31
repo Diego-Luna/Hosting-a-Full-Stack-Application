@@ -26,7 +26,9 @@ jobs:
       - run:
           name: Deploy App
           command: |
-            npm run deploy:Frontend
+            aws --version
+            ls
+            aws s3 cp --recursive --acl public-read ./www s3://udagram-test001/
 
 workflows:
   pipeline:
