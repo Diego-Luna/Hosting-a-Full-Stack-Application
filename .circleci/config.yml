@@ -12,9 +12,9 @@ jobs:
           node-version: '14.17.6'
       - checkout
       - aws-cli/setup:
-          aws-access-key-id: AWS_ACCESS_KEY_ID
-          aws-region: AWS_REGION_S3
-          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          aws-access-key-id: $AWS_ACCESS_KEY_ID
+          aws-region: $AWS_REGION_S3
+          aws-secret-access-key: $AWS_SECRET_ACCESS_KEY
 
       - run:
           name: Front-End Install
