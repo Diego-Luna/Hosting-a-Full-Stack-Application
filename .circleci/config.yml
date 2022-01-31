@@ -9,6 +9,7 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs:
   build:
+    working_directory: ~/circleci-demo-python-django
     docker:
       # the base image can run most needed actions with orbs
       - image: cimg/node:14.18.2-browsers
