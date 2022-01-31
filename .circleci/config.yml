@@ -29,7 +29,7 @@ jobs:
             npm run build:Frontend
       - aws-s3/copy:
                 from: www/
-                to: s3://udagram-test001
+                to: s3://udagram-test001/
                 arguments: --recursive
 
       # - aws-s3/sync:
