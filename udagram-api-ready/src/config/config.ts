@@ -10,8 +10,8 @@ export const config = {
   host: process.env.POSTGRES_HOST,
   dialect: "postgres",
   aws_region: process.env.S3_AWS_REGION_S3,
-  aws_profile: process.env.AWS_PROFILE,
-  aws_media_bucket: process.env.AWS_BUCKET,
+  aws_profile: process.env.S3_AWS_PROFILE_S3,
+  aws_media_bucket: process.env.S3_AWS_BUCKET_S3,
   url: process.env.URL,
   jwt: {
     secret: process.env.JWT_SECRET,
