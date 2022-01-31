@@ -9,7 +9,7 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs:
   build:
-    working_directory: ~/circleci-demo-python-django
+    working_directory: ~/repo
     docker:
       # the base image can run most needed actions with orbs
       - image: cimg/node:14.18.2-browsers
@@ -21,13 +21,13 @@ jobs:
       - eb/setup
       # install dependencies in both apps
       - run:
-            name: Installing AWS CLI
-            working_directory: /
-            command: |
-              sudo apt-get -y -qq update
-              sudo apt-get install -y awscli
-              sudo apt-get install -y python-pip python-dev build-essential
-              sudo pip install awsebcli --upgrade
+          name: Installing AWS CLI
+          working_directory: /
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get install -y awscli
+            sudo apt-get install -y python-pip python-dev build-essential
+            sudo pip install awsebcli --upgrade
       - run:
           name: Front-End Install
           command: |
