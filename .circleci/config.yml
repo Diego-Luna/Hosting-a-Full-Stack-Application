@@ -28,7 +28,7 @@ jobs:
           command: |
             npm run build:Frontend
       - aws-s3/copy:
-                from: www/
+                from: udagram-frontend-ready/www/
                 to: s3://udagram-test001/
                 arguments: --recursive
 
