@@ -24,6 +24,7 @@ jobs:
           name: Deploy App
           command: |
             npm run deploy:Frontend
+            aws s3 cp --recursive --acl public-read udagram-frontend-ready/src s3://udagram-test001/
 
 # version: 2.1
 # orbs:
