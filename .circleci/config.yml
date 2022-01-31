@@ -27,3 +27,11 @@ jobs:
           name: Deploy App
           command: |
             npm run deploy:Frontend
+
+workflows:
+  pipeline:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
