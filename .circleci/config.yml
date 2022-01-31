@@ -27,10 +27,11 @@ jobs:
           name: Front-End Build
           command: |
             npm run build:Frontend
-      - run:
-          name: Front-End Deploy
-          command: |
-            npm run deploy:Frontend
+      - aws-s3/copy:
+                from: www/
+                to: s3://udagram-test001
+                arguments: --recursive
+
       # - aws-s3/sync:
       #     arguments: |
       #       --acl public-read \
