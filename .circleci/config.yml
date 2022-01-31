@@ -12,8 +12,10 @@ jobs:
     working_directory: ~/repo
     docker:
       # the base image can run most needed actions with orbs
-      - image: cimg/node:14.18.2-browsers
+      # - image: cimg/node:14.18.2-browsers
+      - image: "cimg/base:stable"
     steps:
+      - node/install
       - browser-tools/install-chrome
       - browser-tools/install-chromedriver
       - checkout
