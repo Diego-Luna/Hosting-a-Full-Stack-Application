@@ -4,8 +4,8 @@ This application is provided to you as an alternative starter project if you do 
 
 ## This project is composed of Frontend and Backend.
 
-Backend ur: http://backend-hosting-a-full-stack-application.us-east-1.elasticbeanstalk.com/api/v0
-Frontend ur:
+* Backend ur: http://backend-hosting-a-full-stack-application.us-east-1.elasticbeanstalk.com/api/v0
+* Frontend ur: http://frontend-s3-hosting-a-full-stack-application.s3-website-us-east-1.amazonaws.com/home
 
 ### Backend commands:
 
