@@ -34,8 +34,8 @@ jobs:
           aws-region: AWS_REGION_S3
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
           from: bucket
-          to: 's3://udagram-test001/'
+          to: 's3://s3-hosting-a-full-stack-application-test-1/'
       - aws-s3/copy:
                 from: udagram-frontend-ready/www/
-                to: s3://udagram-test001/
+                to: s3://s3-hosting-a-full-stack-application-test-1/
                 arguments: --recursive
