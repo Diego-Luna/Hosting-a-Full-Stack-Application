@@ -16,20 +16,20 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
-      - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
+      # - browser-tools/install-chrome
+      # - browser-tools/install-chromedriver
       - checkout
       - aws-cli/setup
-      - eb/setup
+      # - eb/setup
       # install dependencies in both apps
       - run:
           name: Front-End Install
           command: |
             npm run install:Frontend
-      - run:
-          name: Front-End Build
-          command: |
-            npm run build:Frontend
+      # - run:
+      #     name: Front-End Build
+      #     command: |
+      #       npm run build:Frontend
       - run:
           name: Front-End Deploy
           command: |
