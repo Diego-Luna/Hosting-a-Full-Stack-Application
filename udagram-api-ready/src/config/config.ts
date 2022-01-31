@@ -9,7 +9,7 @@ export const config = {
   port_db: Number(process.env.DB_PORT),
   host: process.env.POSTGRES_HOST,
   dialect: "postgres",
-  aws_region: process.env.AWS_REGION,
+  aws_region: process.env.S3_AWS_REGION_S3,
   aws_profile: process.env.AWS_PROFILE,
   aws_media_bucket: process.env.AWS_BUCKET,
   url: process.env.URL,
