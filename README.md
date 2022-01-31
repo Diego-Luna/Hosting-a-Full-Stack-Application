@@ -33,7 +33,12 @@ Frontend ur:
 * Build application Frontend app.
 * Deploy Frontend app folder to S3.
 
+### Circleci Pipeline
 ![circleci pipeline](./imgs/circleci_pipeline.png)
+
+
+### AWS infrastructure
+![AWS infrastructure](./imgs/AWS_infrastructure.png)
 
 ## Dependencias
 
