@@ -27,4 +27,4 @@ jobs:
       - run:
           name: Deploy App
           command: |
-            aws s3 cp --recursive --acl public-read udagram-frontend-ready/src s3://udagram-test001/
+            npm run deploy:Frontend
