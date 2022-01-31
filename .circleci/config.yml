@@ -21,13 +21,6 @@ jobs:
       - eb/setup
       # install dependencies in both apps
       - run:
-          name: Installing AWS CLI
-          working_directory: /
-          command: |
-            sudo apt-get install -y awscli
-            sudo apt-get install -y python-pip python-dev build-essential
-            sudo pip install awsebcli --upgrade
-      - run:
           name: Front-End Install
           command: |
             npm run install:Frontend
