@@ -1,44 +1,16 @@
-# Udagram
-
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
-
-## This project is composed of Frontend and Backend.
-
-* Backend ur: http://backend-hosting-a-full-stack-application.us-east-1.elasticbeanstalk.com/api/v0
-* Frontend ur: http://frontend-s3-hosting-a-full-stack-application.s3-website-us-east-1.amazonaws.com/home
-
-### Backend commands:
+# Backend commands:
 
 1. `"install:API": "cd udagram-api-ready && npm install",`
 2. `"build:API": "cd udagram-api-ready && npm run build",`
 3. `"deploy:API": "cd udagram-api-ready && npm run deploy",`
 
-### Frontend commands:
+# Frontend commands:
 
 - `"install:Frontend": "cd udagram-frontend-ready && npm install",`
 - `"test:Frontend": "cd udagram-frontend-ready && npm run test",`
 - `"e2e:Frontend": "cd udagram-frontend-ready && npm run e2e",`
 - `"build:Frontend": "cd udagram-frontend-ready && npm run build",`
 - `"deploy:Frontend": "cd udagram-frontend-ready && npm run deploy"`
-
-
-### Pipeline process
-
-* Install all Bakend dependencies.
-* Build application Bakend app.
-* Deploy build Bakend app to Elastic Beanstalk.
-
-* Install all Frontend dependencies.
-* Run tests Frontend app.
-* Build application Frontend app.
-* Deploy Frontend app folder to S3.
-
-### Circleci Pipeline
-![circleci pipeline](./Documentation/Pipeline_process/circleci_pipeline.png)
-
-
-### AWS infrastructure
-![AWS infrastructure](./Documentation/Infrastructure_description/AWS_infrastructure.png)
 
 ## Dependencias
 
@@ -136,23 +108,3 @@ This application is provided to you as an alternative starter project if you do 
     "typescript": "^3.5.3"
   },
 ```
-
-## AWS RDS image
-![AWS RDS image](./Documentation/Infrastructure_description/aws-rds.png)
-## AWS EB image
-![AWS EB image](./Documentation/Infrastructure_description/aws-eb.png)
-## AWS S3 image
-![AWS S3 image](./Documentation/Infrastructure_description/aws-s3.png)
-## Circleci image
-![Circleci image](./Documentation/Pipeline_process/circleci-1.png)
-![Circleci image](./Documentation/Pipeline_process/circleci-2.png)
-![Circleci image](./Documentation/Pipeline_process/circleci-3.png)
-
-## ENV Circleci image
-![ENV Circleci image](./Documentation/Pipeline_process/env-cirlceci-1.png)
-![ENV Circleci image](./Documentation/Pipeline_process/env-cirlceci-2.png)
-
-## APP imgs
-![app imgs](./Documentation/App_dependencies/app-1.png)
-![app imgs](./Documentation/App_dependencies/app-2.png)
-![app imgs](./Documentation/App_dependencies/app-3.png)
